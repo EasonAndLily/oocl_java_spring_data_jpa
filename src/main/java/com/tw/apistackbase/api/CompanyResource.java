@@ -17,7 +17,7 @@ public class CompanyResource {
     }
 
     @PostMapping(produces = {"application/json"})
-    public void add(@RequestBody Company company) {
-        companyRepository.save(company);
+    public Company add(@RequestBody Company company) {
+        return companyRepository.save(company);
     }
 }

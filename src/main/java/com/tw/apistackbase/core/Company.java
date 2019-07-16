@@ -10,17 +10,6 @@ public class Company {
 
     private String name;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private CompanyProfile profile;
-
-    public CompanyProfile getProfile() {
-        return profile;
-    }
-
-    public void setProfile(CompanyProfile profile) {
-        this.profile = profile;
-    }
-
     public Long getId() {
         return id;
     }
