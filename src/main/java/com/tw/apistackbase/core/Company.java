@@ -1,7 +1,5 @@
 package com.tw.apistackbase.core;
 
-import javax.persistence.*;
-
 public class Company {
     private Long id;
 
